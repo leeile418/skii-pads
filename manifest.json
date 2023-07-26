@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "Skii Pads",
+    "version": "1.1",
+  
+    "description": "Enables Youtube to Skii Pads",
+  
+    "icons": {
+      "48": "icons/ski.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["skii-pads.js"]
+      }
+    ]
+
+  }
